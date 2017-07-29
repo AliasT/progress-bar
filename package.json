@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "@types/node": "^8.0.17"
+  },
+  "scripts": {
+    "dev": "tsc index.ts --watch --target es2015 --types node --outDir dist",
+    "build": "tsc index.ts --target es2015 --types node --outDir dist"
   }
 }
