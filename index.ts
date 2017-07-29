@@ -27,7 +27,7 @@ module.exports = class ProgressBar {
     s += this.empty.repeat(empty)
     s += this.endDelimiter
     s += `${p * 100}%`
-    s += " \r"
+    s += " \r" /* 不换行，不重复输出的关键在于不能输出\n */
 
     return s
   }
